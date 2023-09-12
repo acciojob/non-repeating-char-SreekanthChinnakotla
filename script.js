@@ -1,7 +1,6 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-
-    if (!str) {
+	    if (!str) {
         return null;
     }
 
@@ -18,5 +17,8 @@ function firstNonRepeatedChar(str) {
         const char = str[i];
         if (charCount[char.charCodeAt(0) - 'a'.charCodeAt(0)] === 1) {
             return char;
-        }
-    }
+        }
+    }
+}
+const input = prompt("Enter a string");
+alert(firstNonRepeatedChar(input)); 
